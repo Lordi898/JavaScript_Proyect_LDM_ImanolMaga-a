@@ -1,0 +1,47 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+    text-align: center;
+}
+
+header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 20px 0;
+}
+
+.titulo-principal {
+    margin: 0;
+}
+
+.subtitulo {
+    font-size: 1.2em;
+    margin-top: 5px;
+}
+
+main {
+    padding: 20px;
+}
+
+.descripcion, .exploracion {
+    background: white;
+    padding: 15px;
+    margin: 10px auto;
+    max-width: 600px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+footer {
+    background-color: #222;
+    color: white;
+    padding: 10px 0;
+    margin-top: 20px;
+}
+
+.autor {
+    margin: 0;
+}
