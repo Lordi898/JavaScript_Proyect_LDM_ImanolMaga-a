@@ -2,46 +2,74 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
-    color: #333;
+    background-color: white;
+    color: black;
     text-align: center;
 }
 
-header {
-    background-color: #4CAF50;
-    color: white;
-    padding: 20px 0;
+.navbar {
+    background-color: #333;
+    padding: 10px;
 }
 
-.titulo-principal {
+.navbar ul {
+    list-style: none;
+    padding: 0;
     margin: 0;
+    display: flex;
+    justify-content: center;
 }
 
-.subtitulo {
-    font-size: 1.2em;
-    margin-top: 5px;
+.navbar li {
+    margin: 0 15px;
 }
 
-main {
-    padding: 20px;
+.navbar a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
 }
 
-.descripcion, .exploracion {
+.container {
+    margin-top: 50px;
+}
+
+.personalizer {
+    display: none;
+    position: absolute;
+    top: 50px;
+    right: 50px;
     background: white;
-    padding: 15px;
-    margin: 10px auto;
-    max-width: 600px;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
 }
 
-footer {
-    background-color: #222;
-    color: white;
-    padding: 10px 0;
-    margin-top: 20px;
+.personalizer p {
+    margin: 5px 0;
+    font-weight: bold;
 }
 
-.autor {
-    margin: 0;
+.colors, .sizes, .fonts {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.colors div, .sizes button, .fonts button {
+    width: 30px;
+    height: 30px;
+    margin: 3px;
+    border: 1px solid black;
+    cursor: pointer;
+}
+
+.sizes button, .fonts button {
+    width: 40px;
+    height: 30px;
+    font-size: 14px;
+}
+
+.colors div:hover, .sizes button:hover, .fonts button:hover {
+    opacity: 0.7;
 }
