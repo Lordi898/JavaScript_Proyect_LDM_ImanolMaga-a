@@ -1,12 +1,19 @@
-body {
-    font-family: Arial, sans-serif;
+/* Reset */
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+}
+
+/* General */
+body {
+    font-family: Arial, sans-serif;
     background-color: white;
     color: black;
     text-align: center;
 }
 
+/* Navbar */
 .navbar {
     background-color: #333;
     padding: 10px;
@@ -14,8 +21,6 @@ body {
 
 .navbar ul {
     list-style: none;
-    padding: 0;
-    margin: 0;
     display: flex;
     justify-content: center;
 }
@@ -30,46 +35,73 @@ body {
     font-size: 18px;
 }
 
+/* Contenido */
 .container {
     margin-top: 50px;
 }
 
+/* Menú de personalización */
 .personalizer {
     display: none;
     position: absolute;
     top: 50px;
-    right: 50px;
+    right: 20px;
     background: white;
     padding: 10px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
     border-radius: 5px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    border: 1px solid #ccc;
+    width: 150px;
+    text-align: left;
+}
+
+.menu-content { /* Estilos para el contenedor interno */
+    padding: 10px; /* Espacio interno para el contenido */
 }
 
 .personalizer p {
-    margin: 5px 0;
-    font-weight: bold;
+    margin-bottom: 5px; /* Espacio entre los párrafos */
 }
 
-.colors, .sizes, .fonts {
+/* Opciones */
+.color-options, .size-options, .font-options {
     display: flex;
-    justify-content: center;
-    margin-bottom: 10px;
+
+ 
+    gap: 5px; 
+    margin-bottom: 8px;
 }
 
-.colors div, .sizes button, .fonts button {
-    width: 30px;
-    height: 30px;
-    margin: 3px;
-    border: 1px solid black;
+.color-options div {
+    width: 20px;
+    height: 18px;
+    border-radius: 5px;
+    border: 2px solid black;
     cursor: pointer;
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2); /* Sombra */
+    transition: transform 0.4s ease, box-shadow 0.3s ease; /* Transiciones suaves */
 }
 
-.sizes button, .fonts button {
-    width: 40px;
-    height: 30px;
-    font-size: 14px;
+.color-options div:hover {
+    transform: scale(1.1); /* Escala al pasar el ratón */
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Sombra más grande al pasar el ratón */
+    border: 3px solid #000000; /* borde negro */
 }
 
-.colors div:hover, .sizes button:hover, .fonts button:hover {
-    opacity: 0.7;
+.size-options button, .font-options button {
+    width: 30px;
+    height: 25px;
+    font-size: 12px;
+    border: none;
+    cursor: pointer;
+    border-radius: 3px;
+    background: #f0f0f0;
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2); /* Sombra */
+    transition: transform 0.2s ease, box-shadow 0.2s ease; /* Transiciones suaves */
+}
+
+.size-options button:hover, .font-options button:hover {
+    background: #ddd;
+    transform: scale(1.05); /* Escala al pasar el ratón */
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Sombra más grande al pasar el ratón */
 }

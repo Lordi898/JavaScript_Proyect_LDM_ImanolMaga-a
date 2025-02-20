@@ -7,7 +7,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const textFonts = document.getElementById("textFonts");
 
     // Colores disponibles
-    const colors = ["red", "green", "blue", "black", "white", "yellow", "pink", "gray"];
+    const colors = ["pink", "green", "blue", "gray", "white"];
     
     // Crear botones de colores de fondo y texto
     colors.forEach(color => {
