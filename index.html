@@ -1,32 +1,71 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <link rel="stylesheet" href="styles.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Menú Personalizable</title>
+    <title>Customizable Menu</title>
 </head>
 <body>
+    <nav class="top-bar">
+        <button id="personalizer-btn">Personalizer</button>
+        <a href="form.html">Form</a>
+        <a href="images.html">Images</a>
+    </nav>
+    
+    <div id="personalizer-menu" class="hidden">
+        <div class="menu-content">
+            <h3>Background Color</h3>
+            <div class="color-options">
+                <button class="color-btn" data-color="#4CAF50"></button>
+                <button class="color-btn" data-color="#ffffff"></button>
+                <button class="color-btn" data-color="#000000"></button>
+            </div>
+            <h3>Change Letters</h3>
+            <div class="color-options">
+                <button class="color-btn" data-textcolor="red"></button>
+                <button class="color-btn" data-textcolor="blue"></button>
+                <button class="color-btn" data-textcolor="black"></button>
+            </div>
+            <h3>Font Size</h3>
+            <div class="size-options">
+                <button class="size-btn" data-size="12px">XS</button>
+                <button class="size-btn" data-size="16px">S</button>
+                <button class="size-btn" data-size="20px">M</button>
+                <button class="size-btn" data-size="24px">L</button>
+                <button class="size-btn" data-size="28px">XL</button>
+            </div>
+            <h3>Font Type</h3>
+            <div class="font-options">
+                <button class="font-btn" data-font="Arial">A</button>
+                <button class="font-btn" data-font="Times New Roman">T</button>
+                <button class="font-btn" data-font="Courier New">C</button>
+                <button class="font-btn" data-font="Verdana">V</button>
+            </div>
+        </div>
+    </div>
+    
     <header>
-        <h1 class="titulo-principal">Bienvenido a nuestra página personalizable</h1>
-        <p class="subtitulo">Explora y ajusta las opciones a tu gusto</p>
+        <h1 class="main-title">Welcome to our customizable page</h1>
+        <p class="subtitle">Explore and adjust the options to your liking</p>
     </header>
     
     <main>
-        <section class="descripcion">
-            <h2>Personalización interactiva</h2>
-            <p>Esta página es altamente personalizable a través de la misma interfaz.</p>
+        <section class="description">
+            <h2>Interactive Customization</h2>
+            <p>This page is highly customizable through the same interface.</p>
         </section>
 
-        <section class="exploracion">
-            <h3>Descubre sus funcionalidades</h3>
-            <p>Te invito a explorar por ti mismo las diferentes opciones disponibles.</p>
+        <section class="exploration">
+            <h3>Discover its features</h3>
+            <p>I invite you to explore the different available options yourself.</p>
         </section>
     </main>
     
     <footer>
-        <p class="autor">¡Espero que te guste! Autor: Imanol Magaña de la Fuente</p>
+        <p class="author">Hope you like it! Author: Imanol Magaña de la Fuente</p>
     </footer>
-    <script src="personalizacion.js"></script>
+    
+    <script src="personalization.js"></script>
 </body>
 </html>
