@@ -1,50 +1,67 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Menú Personalización</title>
+    <title>Página Personalizable</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <nav class="navbar">
-        <ul>
-            <li><a href="#" id="openPersonalizer">Personalizer</a></li>
-            <li><a href="form.html">Form</a></li>
-            <li><a href="images.html">Images</a></li>
-        </ul>
-    </nav>
 
-    <div class="container">
+    <div class="barra-superior"><div class="menu-item" id="personalizer">Personalizer</div>
+        <a href="form.html" class="menu-item">Form</a>
+        
+        <a href="images.html" class="menu-item">Images</a>
+    </div>
+
+    <div class="menu-desplegable" id="menu-desplegable">
+        <div class="opcion">
+            <h3>Bg_color</h3>
+            <div class="colores">
+                <!-- Colores de fondo -->
+                <div class="color" data-color="#FFA07A"></div> <!-- Rojo clarito -->
+                <div class="color" data-color="#98FB98"></div> <!-- Verde clarito -->
+                <div class="color" data-color="#ADD8E6"></div> <!-- Azul clarito -->
+                <div class="color" data-color="#A9A9A9"></div> <!-- Gris oscuro -->
+                <div class="color" data-color="#D3D3D3"></div> <!-- Gris clarito -->
+            </div>
+        </div>
+        <div class="opcion">
+            <h3>Change_letters</h3>
+            <div class="colores">
+                <!-- Colores de texto -->
+                <div class="color" data-texto="#FF0000"></div> <!-- Rojo -->
+                <div class="color" data-texto="#006400"></div> <!-- Verde oscuro -->
+                <div class="color" data-texto="#00008B"></div> <!-- Azul oscuro -->
+                <div class="color" data-texto="#000000"></div> <!-- Negro -->
+                <div class="color" data-texto="#FFFFFF"></div> <!-- Blanco -->
+            </div>
+        </div>
+        <div class="opcion">
+            <div class="tamaños">
+                <!-- Tamaños de texto -->
+                <div class="tamano" data-size="0.5">XS</div>
+                <div class="tamano" data-size="0.75">S</div>
+                <div class="tamano" data-size="1">M</div>
+                <div class="tamano" data-size="1.5">L</div>
+                <div class="tamano" data-size="2">XL</div>
+            </div>
+        </div>
+        <div class="opcion">
+            <div class="fuentes">
+                <!-- Tipos de letra -->
+                <div class="fuente" data-font="Arial">A</div>
+                <div class="fuente" data-font="Times New Roman">T</div>
+                <div class="fuente" data-font="Courier New">C</div>
+                <div class="fuente" data-font="Georgia">F</div>
+                <div class="fuente" data-font="Verdana">M</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="contenido">
         <h1>Welcome to Personalizer</h1>
         <p>This is a paragraph that you can adapt its content.</p>
         <p>Click to Personalizer banner.</p>
-    </div>
-
-    <div id="personalizerMenu" class="personalizer">
-        <div class="menu-content">  <p>Bg_color</p>
-        <div class="color-options" id="bgColors"></div>
-
-        <p>Change letters</p>
-        <div class="color-options" id="textColors"></div>
-
-        <p>Size</p>
-        <div class="size-options" id="textSizes">
-            <button data-size="12px">XS</button>
-            <button data-size="16px">S</button>
-            <button data-size="20px">M</button>
-            <button data-size="24px">L</button>
-            <button data-size="28px">XL</button>
-        </div>
-
-        <p>Font</p>
-        <div class="font-options" id="textFonts">
-            <button data-font="Arial">A</button>
-            <button data-font="Times New Roman">T</button>
-            <button data-font="Courier New">C</button>
-            <button data-font="Verdana">V</button>
-            <button data-font="Monospace">M</button>
-        </div>
     </div>
 
     <script src="personalizacion.js"></script>

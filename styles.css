@@ -1,107 +1,95 @@
-/* Reset */
-* {
+body {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-}
-
-/* General */
-body {
+    background-color: #FFFFFF;
     font-family: Arial, sans-serif;
-    background-color: white;
-    color: black;
-    text-align: center;
+    color: #000000;
 }
 
-/* Navbar */
-.navbar {
-    background-color: #333;
-    padding: 10px;
-}
-
-.navbar ul {
-    list-style: none;
+.barra-superior {
     display: flex;
-    justify-content: center;
+    justify-content: center; /* Centrar elementos horizontalmente */
+    background-color: #2F2F2F; /* Gris bastante oscuro */
+    padding: 15px;
 }
 
-.navbar li {
-    margin: 0 15px;
-}
-
-.navbar a {
+.menu-item {
+    color: #FFFFFF;
+    margin: 0 30px; /* Espacio ligeramente superior entre ellos */
+    cursor: pointer;
     text-decoration: none;
-    color: white;
     font-size: 18px;
 }
 
-/* Contenido */
-.container {
-    margin-top: 50px;
-}
-
-/* Menú de personalización */
-.personalizer {
+.menu-desplegable {
     display: none;
     position: absolute;
-    top: 50px;
-    right: 20px;
-    background: white;
-    padding: 10px;
-    border-radius: 5px;
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
-    border: 1px solid #ccc;
-    width: 150px;
-    text-align: left;
-}
-
-.menu-content { /* Estilos para el contenedor interno */
-    padding: 10px; /* Espacio interno para el contenido */
-}
-
-.personalizer p {
-    margin-bottom: 5px; /* Espacio entre los párrafos */
-}
-
-/* Opciones */
-.color-options, .size-options, .font-options {
-    display: flex;
-
- 
-    gap: 5px; 
-    margin-bottom: 8px;
-}
-
-.color-options div {
-    width: 20px;
-    height: 18px;
-    border-radius: 5px;
-    border: 2px solid black;
-    cursor: pointer;
-    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2); /* Sombra */
-    transition: transform 0.4s ease, box-shadow 0.3s ease; /* Transiciones suaves */
-}
-
-.color-options div:hover {
-    transform: scale(1.1); /* Escala al pasar el ratón */
-    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Sombra más grande al pasar el ratón */
-    border: 3px solid #000000; /* borde negro */
-}
-
-.size-options button, .font-options button {
-    width: 30px;
-    height: 25px;
-    font-size: 12px;
+    top: 51px;
+    left: calc(50% - 100px); /* Centrar el menú */
+    background-color: #F9F9F9;
     border: none;
-    cursor: pointer;
-    border-radius: 3px;
-    background: #f0f0f0;
-    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2); /* Sombra */
-    transition: transform 0.2s ease, box-shadow 0.2s ease; /* Transiciones suaves */
+    padding: 0px 5px 5px 5px;
+    z-index: 1000;
+    width: 200px; 
+    box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.1); /* Sombra para el menú */
+    border-radius: 10px;
 }
 
-.size-options button:hover, .font-options button:hover {
-    background: #ddd;
-    transform: scale(1.05); /* Escala al pasar el ratón */
-    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Sombra más grande al pasar el ratón */
+.opcion {
+    margin-bottom: 2px;
+}
+
+.opcion h3 {
+    margin-top: 0px;
+    margin-bottom: 2px;
+    font-size: 24px;
+}
+
+.colores, .tamaños, .fuentes {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2px;
+}
+
+.color, .tamano, .fuente {
+    width: 30px;
+    height: 30px;
+    border-radius: 7px; /* Borde circular de 6px */
+    border: 4px solid #000000; /* Borde negro de 3px */
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.color:hover, .tamano:hover, .fuente:hover {
+    border-color: green; /* Borde cambia a verde */
+    transform: scaleY(1.2) scaleX(0.8); /* Estirar verticalmente y contraer horizontalmente */
+}
+
+.color {
+    background-color: #D3D3D3;
+}
+
+.tamano, .fuente {
+    background-color: #dddddd; /* Gris clarito */
+    font-weight: bold;
+    font-size: 16px;
+    color: #000000;
+}
+
+.contenido {
+    margin: 40px;
+    text-align: left; /* Texto alineado a la izquierda */
+}
+
+.contenido h1 {
+    margin-bottom: 20px;
+    font-size: 15em; /* Tamaño inicial para H1 */
+}
+
+.contenido p {
+    margin-bottom: 15px;
+    font-size: 1em; /* Tamaño inicial para párrafos */
 }
