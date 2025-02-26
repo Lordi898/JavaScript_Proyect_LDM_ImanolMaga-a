@@ -86,10 +86,10 @@ body {
 
 .contenido h1 {
     margin-bottom: 20px;
-    font-size: 15em; /* Tamaño inicial para H1 */
+    font-size: 46px; /* Tamaño inicial para H1 */
 }
 
 .contenido p {
     margin-bottom: 15px;
-    font-size: 1em; /* Tamaño inicial para párrafos */
+    font-size: 26px; /* Tamaño inicial para párrafos */
 }
