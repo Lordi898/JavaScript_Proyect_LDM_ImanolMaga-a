@@ -23,21 +23,15 @@ document.querySelectorAll('.color[data-texto]').forEach(function(element) {
     });
 });
 
-const h1Size = document.querySelector('.contenido h1');
-const pSize = document.querySelector('.contenido p');
-
-let tamanoH1 = parseFloat(window.getComputedStyle(tamanoH1).fontSize);
-let tamanoP = parseFloat(window.getComputedStyle(tamanoP).fontSize);
-
-document.querySelectorAll('.tamano').forEach((element) => {
+// Cambiar el tamaño del texto
+document.querySelectorAll('.tamano').forEach(function(element) {
     element.addEventListener('click', function() {
-        const escala = parseFloat(this.getAttribute('data-scale')); //Obtener escala del html
-
-        //Multiplicar por la escala
-        tamanoH1.style.fontSize = `${tamanoH1 * escala}px`;
-        tamanoP.style.fontSize = `${tamanoH1 * escala}px`;
-    })
-})
+        const size = element.getAttribute('data-size');
+        document.querySelectorAll('.contenido h1, .contenido p').forEach(function(elem) {
+            elem.style.fontSize = size;
+        });
+    });
+});
 
 // Cambiar la fuente del texto
 document.querySelectorAll('.fuente').forEach(function(element) {
